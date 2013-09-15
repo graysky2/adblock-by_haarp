@@ -1,0 +1,42 @@
+PREFIX="/jffs/adblock/"
+
+### Settings ###
+PIXEL_IP="0"    ## 0: disable pixelserv
+        ## 1-254: last octet of IP to run pixelserv on (default=254)
+PIXEL_OPTS=""    ## additional options for pixelserv
+BRIDGE="br0"    ## bridge interface for pixelserv (default=br0)
+RAMLIST="0"    ## 1: keep blocklist in RAM (e.g. for small JFFS) (default=0)
+CONF="/etc/dnsmasq.custom"    ## dnsmasq custom config (must be sourced by dnsmasq!)
+                ## confused? then leave this be!
+
+
+### Sources (uncomment desired blocklists) [must be compatible to the hosts file format!] ###
+## MVPS HOSTS (~600k) [default]:
+SOURCES="$SOURCES http://winhelp2002.mvps.org/hosts.txt"
+## pgl.yoyo.org (~70k) [default]:
+SOURCES="$SOURCES http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext"
+## Hosts File Project (~3M!):
+#SOURCES="$SOURCES http://hostsfile.mine.nu/Hosts"
+## The Cameleon Project (~600k):
+SOURCES="$SOURCES http://sysctl.org/cameleon/hosts"
+## AdAway mobile ads (~20k):
+SOURCES="$SOURCES http://adaway.sufficientlysecure.org/hosts.txt"
+## hpHosts ad/tracking servers (~400k):
+#SOURCES="$SOURCES http://hosts-file.net/ad_servers.asp"
+## hpHosts ad/tracking/malicious servers (~6M! replaces hpHosts ad/tracking list):
+#SOURCES="$SOURCES http://hosts-file.net/download/hosts.txt, http://hosts-file.net/hphosts-partial.asp"
+## MalwareDomainList.com (~40k):
+SOURCES="$SOURCES http://www.malwaredomainlist.com/hostslist/hosts.txt"
+
+
+### Blacklist additional sites ###
+## (add hostnames inside the quotes, space-separated, without http://) ##
+BLACKLIST=""
+
+### Whitelist sites from blocking ###
+## (add hostnames inside the quotes, space-separated, without http://) ##
+WHITELIST="hostingmanager.secureserver.net p3nlsccweb.secureserver.net"
+
+### Blacklist and Whitelist files (optional) ###
+## create the files "blacklist" and "whitelist" with your hosts, one per line ##
+## useful if you have many hosts in these (they generate faster aswell!) ##

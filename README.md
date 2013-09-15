@@ -33,9 +33,13 @@ Users can call the script from the shell (or the TomatoUSB GUI under Tools>Syste
 
 ## Command-line Options
 `/opt/adblock/adblock.sh`	Default, update and enable adblocker.
+
 `/opt/adblock/adblock.sh stop`	Disable the adblocker.
+
 `/opt/adblock/adblock.sh restart`	Restart adblocker e.g. for config changes and script updates.
+
 `/opt/adblock/adblock.sh force`	Force updating of filters, even in not updated.
+
 `/opt/adblock/adblock.sh toggle`	Disable the adlocker if active, enable if inactive. Perfect for one of the custom buttons on your router.
 
 ### Example starting the script when the router boot

@@ -20,7 +20,7 @@ SOURCES="$SOURCES http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&
 ## The Cameleon Project (~600k):
 SOURCES="$SOURCES http://sysctl.org/cameleon/hosts"
 ## AdAway mobile ads (~20k):
-SOURCES="$SOURCES http://adaway.sufficientlysecure.org/hosts.txt"
+SOURCES="$SOURCES http://adaway.org/hosts.txt"
 ## hpHosts ad/tracking servers (~400k):
 #SOURCES="$SOURCES http://hosts-file.net/ad_servers.asp"
 ## hpHosts ad/tracking/malicious servers (~6M! replaces hpHosts ad/tracking list):

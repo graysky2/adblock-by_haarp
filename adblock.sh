@@ -1,5 +1,5 @@
 #!/bin/sh
-## Clean, Lean and Mean Adblock v4.5 by haarp
+## Clean, Lean and Mean Adblock by haarp
 ##
 ## Options:
 ## 'force': force updating sources,

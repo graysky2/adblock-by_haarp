@@ -1,14 +1,18 @@
 PREFIX="/jffs/adblock/"
 
 ### Settings ###
-PIXEL_IP="0"    ## 0: disable pixelserv
-        ## 1-254: last octet of IP to run pixelserv on (default=254)
-PIXEL_OPTS=""    ## additional options for pixelserv
-BRIDGE="br0"    ## bridge interface for pixelserv (default=br0)
-RAMLIST="0"    ## 1: keep blocklist in RAM (e.g. for small JFFS) (default=0)
-CONF="/etc/dnsmasq.custom"    ## dnsmasq custom config (must be sourced by dnsmasq!)
-                ## confused? then leave this be!
-
+##     0: disable pixelserv
+## 1-254: last octet of IP to run pixelserv on (default=254)
+PIXEL_IP="0"
+## additional options for pixelserv
+PIXEL_OPTS=""
+## bridge interface for pixelserv (default=br0)
+BRIDGE="br0"
+## 1: keep blocklist in RAM (e.g. for small JFFS) (default=0)
+RAMLIST="0"
+## dnsmasq custom config (must be sourced by dnsmasq!)
+## confused? then leave this be!
+CONF="/etc/dnsmasq.custom"
 
 ### Sources (uncomment desired blocklists) [must be compatible to the hosts file format!] ###
 ## MVPS HOSTS (~600k) [default]:

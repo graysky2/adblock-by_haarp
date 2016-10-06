@@ -24,7 +24,7 @@ SOURCES="$SOURCES http://adaway.org/hosts.txt"
 ## hpHosts ad/tracking servers (~400k):
 #SOURCES="$SOURCES http://hosts-file.net/ad_servers.asp"
 ## hpHosts ad/tracking/malicious servers (~6M! replaces hpHosts ad/tracking list):
-#SOURCES="$SOURCES http://hosts-file.net/download/hosts.txt, http://hosts-file.net/hphosts-partial.asp"
+#SOURCES="$SOURCES http://hosts-file.net/download/hosts.txt http://hosts-file.net/hphosts-partial.txt"
 ## MalwareDomainList.com (~40k):
 SOURCES="$SOURCES http://www.malwaredomainlist.com/hostslist/hosts.txt"
 
@@ -35,7 +35,7 @@ BLACKLIST=""
 
 ### Whitelist sites from blocking ###
 ## (add hostnames inside the quotes, space-separated, without http://) ##
-WHITELIST="hostingmanager.secureserver.net p3nlsccweb.secureserver.net"
+WHITELIST="hostsfile.mine.nu hostingmanager.secureserver.net p3nlsccweb.secureserver.net"
 
 ### Blacklist and Whitelist files (optional) ###
 ## create the files "blacklist" and "whitelist" with your hosts, one per line ##
